@@ -1,0 +1,427 @@
+@import 'palette.less';
+@import 'mixins.less';
+
+/* MOBILE STYLESHEET */
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    background-color: @lightColor;
+    color: @darkColor;
+}
+
+nav, footer {
+    background-color: @darkColor;
+    color: @lightColor;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    .transparent;
+    div {
+        float: left;
+        padding: 1em 0 0 0;
+        .hamburger {
+            background:none;
+            position:absolute;
+            top: 0;
+            right: 0;
+            line-height: 1.5em;
+            padding: .5em;
+            color: @lightColor;
+            border: 0;
+            font-size: 1.5em;
+            font-weight: bold;
+            cursor: pointer;
+            outline: none;
+            z-index: 10000000000000;
+        }
+        .cross {
+            background: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: .25em;
+            color: @lightColor;
+            border: 0;
+            font-size: 3em;
+            font-weight: bold;
+            cursor: pointer;
+            outline: none;
+            z-index: 10000000000000;
+        }
+        .menu {
+            padding: 1em 0 0 0;
+        }
+        .fa {
+            padding: 0 .25em 0 .5em;
+        }
+    }
+    ul {
+        li {
+            border-top: 1px solid #FF0000;
+            display: block;
+            float: left;
+            text-align: center;
+            font-weight: bold;
+            padding: .5em 0 .5em 0;
+            width: 100%;
+            &:hover {
+                background-color: @color1;
+            }
+            a {
+                padding: 1em;
+                text-decoration: none;
+                &:link {
+                    color: @lightColor;
+                }
+                &:visited {
+                    color: @lightColor;
+                }
+                &:hover {
+                    color: @darkColor;
+                }
+            }
+        }
+    }
+}
+
+header {
+    background-color: @darkColor;
+    height: 60px;
+}
+
+h1 {
+    .headingStyle(@darkColor; 1.6em);
+    padding: .25em 0 .25em .5em;
+}
+
+h2 {
+    .headingStyle(@lightColor; 1.4em);
+    background-color: @color1;
+    padding: .25em 0 .25em .5em;
+}
+
+h3 {
+    .headingStyle(@color1; 1.2em);
+    text-decoration: underline;
+    padding: .25em 0 .25em .5em;
+}
+
+h4 {
+    .headingStyle(@lightColor; 1em);
+    text-align: center;
+    text-transform: none;
+    background-color: @color1;
+    line-height: 2em;
+    padding-left: 0;
+}
+
+h5 {
+    .headingStyle(@color1; 1em);
+    padding: 0 0 .5em 1em;
+    text-decoration: underline;
+    text-transform: none;
+}
+
+ul {
+    li {
+        line-height: 1.5em;
+        list-style-position: outside;
+    }
+}
+
+main {
+    .slideshow {
+        display: none;
+    }
+    img {
+        display: block;
+        margin: 0 auto 0 auto;
+    }
+    section {
+        p {
+            padding: .5em 1em .5em 1em;
+            text-indent: 1em;
+            &:first-letter {
+                font-size: 125%;
+                font-weight: bold;
+            }
+        }
+        ul {
+            list-style-type: disc;
+            list-style-position: inside;
+            padding: 0 3em 1em 3em;
+            li {
+                line-height: 1.5em;
+                padding-bottom: 1em;
+                &:first-letter {
+                    font-size: 125%;
+                    font-weight: bold;
+                }
+                &:last-child {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    p {
+        text-align: center;
+        margin: 1em 0 1em 0;
+        font-weight: bold;
+    }
+    section {
+        padding: 0;
+    }
+    ul {
+        margin: 1em 0 1em 0;
+        li {
+            display: block;
+            float: left;
+            text-align: center;
+            width: 33.3%;
+            font-weight: bold;
+            a {
+                &:link {
+                    color: @color1;
+                }
+                &:visited {
+                    color: @color1;
+                }
+                &:hover {
+                    color: @lightColor;
+                }
+            }
+        }
+    }
+}
+
+.active {
+    background-color: @color1;
+}
+
+a {
+    text-decoration: none;
+    &:link {
+            color: @color1;
+    }
+    &:visited {
+            color: @color1;
+    }
+    &:hover {
+            color: @lightColor;
+    }
+}
+
+.fa {
+        font-size: 1.5em;
+    }
+
+.clip {
+    clip: rect(1px, 1px, 1px, 1px); 
+    position: absolute !important; 
+    height: 1px; width: 1px; 
+    overflow: hidden;
+}
+
+
+/*
+TABLET STYLESHEET
+The following CSS affects all screen sizes larger than 480 pixels wide.
+*/
+
+@media only screen and (min-width: 481px) {
+    body {
+        font-size: 18px;
+    }
+    
+    nav {
+        div {
+            padding: 1em;
+            .hamburger {
+                display: none;
+            }
+            .cross {
+                display: none;
+            }
+            .menu {
+                display: block;
+                float: right;
+            }
+            .fa {
+                padding: 0 .5em 0 .5em;
+            }
+        }
+        ul {
+            float: right;
+            li {
+                border-top: none;
+                width: auto;
+                padding: .5em 0 .5em 0;
+            }
+        }
+    }
+    
+    main {
+        .slideshow {
+            display: block;
+            max-width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 1em;
+        }
+        section {
+            ul {
+                li {
+                    padding: 0 0.5em 0 0.5em;
+                }
+            }
+        }
+    }
+    
+    header {
+        height: 80px;
+    }
+    
+    h1 {
+        .headingStyle(@color1; 1.8em);
+    }
+
+    h2 {
+        .headingStyle(@lightColor; 1.6em);
+    }
+
+    h3 {
+        .headingStyle(@color1; 1.4em);
+    }
+
+    h4 {
+        .headingStyle(@lightColor; 1.2em);
+        text-align: center;
+        text-transform: none;
+        line-height: 2em;
+    }
+    
+    h5 {
+    .headingStyle(@color1; 1em);
+    text-decoration: underline;
+    text-transform: none;
+}
+    
+    .fa {
+        font-size: 1.7em;
+    }
+}
+
+/*
+DESKTOP STYLESHEET
+The following CSS affects all screen sizes larger than 1024 pixels wide.
+*/
+
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 20px;
+    }
+    
+    nav {
+        div {
+            .logo {
+                padding: 1em;
+            }
+            a {
+                padding: 1em;
+            }
+            .fa {
+                font-size: 1.9em;
+                padding: .25em;
+            }
+        }
+        ul {
+            float: right;
+            li {
+                padding: 1em 1em 1em 1em;
+                a {
+                    padding: 1em 1em 1em 1em;
+                }
+            }
+        }
+    }
+    
+    main {
+        .slideshow {
+            display: block;
+            max-height: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 2em;
+        }
+        section {
+            p {
+                padding: 2em 2em 0 2em;
+                text-indent: 2em;
+                &:last-child {
+                    padding-bottom: 2em;
+                }
+            }
+            ul {
+                padding: 1em 3em 1em 3em;
+                li {
+                    padding: 0 0.5em 0 0.5em;
+                    }
+                }
+            }
+        }
+
+    header {
+        height: 110px;
+    }
+    
+    h1 {
+        .headingStyle(@color1; 2em);
+    }
+
+    h2 {
+        .headingStyle(@lightColor; 1.8em);
+        padding: .5em 0 .5em 1em;
+    }
+
+    h3 {
+        .headingStyle(@color1; 1.6em);
+        padding: 1em 0 0 1em;
+    }
+
+    h4 {
+        .headingStyle(@lightColor; 1.4em);
+        text-align: center;
+        text-transform: none;
+        line-height: 2em;
+    }
+    
+    h5 {
+        .headingStyle(@color1; 1em);
+        text-decoration: underline;
+        text-transform: none;
+        padding: 0 2em 0 2em;
+    }
+    
+    .fa {
+        font-size: 1.9em;
+    }
+    
+    .float {
+        float: right;
+    }
+    
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto 0 auto;
+    }
+    
+}

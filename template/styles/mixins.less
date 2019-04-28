@@ -1,0 +1,76 @@
+// out: false
+
+.headingStyle(@paramColor; @paramSize) {
+    color: @paramColor;
+    font-size: @paramSize;
+    font-weight: bold;
+    line-height: @paramSize;
+    text-transform: uppercase;
+    font-family: 'Noto Serif', serif;
+}
+
+.roundedCornersAndBgColor(@paramBorderRadius: 5px; @paramBgColor: #FFFFFF) {
+    border-radius: @paramBorderRadius;
+    -moz-border-radius: @paramBorderRadius;
+    -webkit-border-radius: @paramBorderRadius;
+    background-color: @paramBgColor;
+}
+
+.dropShadow(@paramOutset: 0; @paramInset: 0; @paramBlurSpread: 10px; @paramShadowColor: #000000) {
+    box-shadow: @paramOutset @paramInset @paramBlurSpread @paramShadowColor;
+    -moz-box-shadow: @paramOutset @paramInset @paramBlurSpread @paramShadowColor;
+    -webkit-box-shadow: @paramOutset @paramInset @paramBlurSpread @paramShadowColor;
+}
+
+.gradient(@paramDirection: to left; @paramGradColor1: #CCC; @paramGradColor2: #AAA) {
+    background: linear-gradient(@paramDirection, @paramGradColor1, @paramGradColor2);
+}
+
+.expand() {
+    transform: scale(1.1);
+    display: inline-block;
+}
+
+.transparent() {
+    opacity: 0.95;
+}
+
+.fancyText() {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.loudText() {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.flip() {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.border() {
+    border-bottom: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #FF0000;
+}
+
+.alineRight() {
+    text-align: right;
+}
+
+.blur() {
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+
+.hidden() {
+    visibility: hidden;
+}
+
+

@@ -1,0 +1,436 @@
+/* Color palette */
+/* Color palette darkened by 20% */
+/* Color palette lightened by 20% */
+/* Color palette desaturated by 100% */
+/* Basic light and dark colors */
+/* MOBILE STYLESHEET */
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+nav,
+footer {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.95;
+}
+nav div {
+  float: left;
+  padding: 1em 0 0 0;
+}
+nav div .hamburger {
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 1.5em;
+  padding: .5em;
+  color: #FFFFFF;
+  border: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+nav div .cross {
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .25em;
+  color: #FFFFFF;
+  border: 0;
+  font-size: 3em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+nav div .menu {
+  padding: 1em 0 0 0;
+}
+nav div .fa {
+  padding: 0 .25em 0 .5em;
+}
+nav ul li {
+  border-top: 1px solid #FF0000;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  padding: .5em 0 .5em 0;
+  width: 100%;
+}
+nav ul li:hover {
+  background-color: #FF0000;
+}
+nav ul li a {
+  padding: 1em;
+  text-decoration: none;
+}
+nav ul li a:link {
+  color: #FFFFFF;
+}
+nav ul li a:visited {
+  color: #FFFFFF;
+}
+nav ul li a:hover {
+  color: #000000;
+}
+header {
+  background-color: #000000;
+  height: 60px;
+}
+h1 {
+  color: #000000;
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 1.6em;
+  text-transform: uppercase;
+  font-family: 'Noto Serif', serif;
+  padding: .25em 0 .25em .5em;
+}
+h2 {
+  color: #FFFFFF;
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  font-family: 'Noto Serif', serif;
+  background-color: #FF0000;
+  padding: .25em 0 .25em .5em;
+}
+h3 {
+  color: #FF0000;
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  font-family: 'Noto Serif', serif;
+  text-decoration: underline;
+  padding: .25em 0 .25em .5em;
+}
+h4 {
+  color: #FFFFFF;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-family: 'Noto Serif', serif;
+  text-align: center;
+  text-transform: none;
+  background-color: #FF0000;
+  line-height: 2em;
+  padding-left: 0;
+}
+h5 {
+  color: #FF0000;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-family: 'Noto Serif', serif;
+  padding: 0 0 .5em 1em;
+  text-decoration: underline;
+  text-transform: none;
+}
+ul li {
+  line-height: 1.5em;
+  list-style-position: outside;
+}
+main .slideshow {
+  display: none;
+}
+main img {
+  display: block;
+  margin: 0 auto 0 auto;
+}
+main section p {
+  padding: .5em 1em .5em 1em;
+  text-indent: 1em;
+}
+main section p:first-letter {
+  font-size: 125%;
+  font-weight: bold;
+}
+main section ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding: 0 3em 1em 3em;
+}
+main section ul li {
+  line-height: 1.5em;
+  padding-bottom: 1em;
+}
+main section ul li:first-letter {
+  font-size: 125%;
+  font-weight: bold;
+}
+main section ul li:last-child {
+  padding-bottom: 0;
+}
+footer p {
+  text-align: center;
+  margin: 1em 0 1em 0;
+  font-weight: bold;
+}
+footer section {
+  padding: 0;
+}
+footer ul {
+  margin: 1em 0 1em 0;
+}
+footer ul li {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 33.3%;
+  font-weight: bold;
+}
+footer ul li a:link {
+  color: #FF0000;
+}
+footer ul li a:visited {
+  color: #FF0000;
+}
+footer ul li a:hover {
+  color: #FFFFFF;
+}
+.active {
+  background-color: #FF0000;
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #FF0000;
+}
+a:visited {
+  color: #FF0000;
+}
+a:hover {
+  color: #FFFFFF;
+}
+.fa {
+  font-size: 1.5em;
+}
+.clip {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+/*
+TABLET STYLESHEET
+The following CSS affects all screen sizes larger than 480 pixels wide.
+*/
+@media only screen and (min-width: 481px) {
+  body {
+    font-size: 18px;
+  }
+  nav div {
+    padding: 1em;
+  }
+  nav div .hamburger {
+    display: none;
+  }
+  nav div .cross {
+    display: none;
+  }
+  nav div .menu {
+    display: block;
+    float: right;
+  }
+  nav div .fa {
+    padding: 0 .5em 0 .5em;
+  }
+  nav ul {
+    float: right;
+  }
+  nav ul li {
+    border-top: none;
+    width: auto;
+    padding: .5em 0 .5em 0;
+  }
+  main .slideshow {
+    display: block;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1em;
+  }
+  main section ul li {
+    padding: 0 0.5em 0 0.5em;
+  }
+  header {
+    height: 80px;
+  }
+  h1 {
+    color: #FF0000;
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 1.8em;
+    text-transform: uppercase;
+    font-family: 'Noto Serif', serif;
+  }
+  h2 {
+    color: #FFFFFF;
+    font-size: 1.6em;
+    font-weight: bold;
+    line-height: 1.6em;
+    text-transform: uppercase;
+    font-family: 'Noto Serif', serif;
+  }
+  h3 {
+    color: #FF0000;
+    font-size: 1.4em;
+    font-weight: bold;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    font-family: 'Noto Serif', serif;
+  }
+  h4 {
+    color: #FFFFFF;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    text-transform: none;
+    line-height: 2em;
+  }
+  h5 {
+    color: #FF0000;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1em;
+    text-transform: uppercase;
+    font-family: 'Noto Serif', serif;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  .fa {
+    font-size: 1.7em;
+  }
+}
+/*
+DESKTOP STYLESHEET
+The following CSS affects all screen sizes larger than 1024 pixels wide.
+*/
+@media only screen and (min-width: 1025px) {
+  body {
+    font-size: 20px;
+  }
+  nav div .logo {
+    padding: 1em;
+  }
+  nav div a {
+    padding: 1em;
+  }
+  nav div .fa {
+    font-size: 1.9em;
+    padding: .25em;
+  }
+  nav ul {
+    float: right;
+  }
+  nav ul li {
+    padding: 1em 1em 1em 1em;
+  }
+  nav ul li a {
+    padding: 1em 1em 1em 1em;
+  }
+  main .slideshow {
+    display: block;
+    max-height: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em;
+  }
+  main section p {
+    padding: 2em 2em 0 2em;
+    text-indent: 2em;
+  }
+  main section p:last-child {
+    padding-bottom: 2em;
+  }
+  main section ul {
+    padding: 1em 3em 1em 3em;
+  }
+  main section ul li {
+    padding: 0 0.5em 0 0.5em;
+  }
+  header {
+    height: 110px;
+  }
+  h1 {
+    color: #FF0000;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 2em;
+    text-transform: uppercase;
+    font-family: 'Noto Serif', serif;
+  }
+  h2 {
+    color: #FFFFFF;
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 1.8em;
+    text-transform: uppercase;
+    font-family: 'Noto Serif', serif;
+    padding: .5em 0 .5em 1em;
+  }
+  h3 {
+    color: #FF0000;
+    font-size: 1.6em;
+    font-weight: bold;
+    line-height: 1.6em;
+    text-transform: uppercase;
+    font-family: 'Noto Serif', serif;
+    padding: 1em 0 0 1em;
+  }
+  h4 {
+    color: #FFFFFF;
+    font-size: 1.4em;
+    font-weight: bold;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    text-transform: none;
+    line-height: 2em;
+  }
+  h5 {
+    color: #FF0000;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1em;
+    text-transform: uppercase;
+    font-family: 'Noto Serif', serif;
+    text-decoration: underline;
+    text-transform: none;
+    padding: 0 2em 0 2em;
+  }
+  .fa {
+    font-size: 1.9em;
+  }
+  .float {
+    float: right;
+  }
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+  }
+}
