@@ -17,7 +17,7 @@
     padding-bottom: 0.5em;
 }
 
-/*  GROUPING  */
+GROUPING  
 .group:before, .group:after { 
     content: "";
     display: table;
@@ -30,7 +30,6 @@
 .group {
     zoom: 1; /* For IE 6/7 */
 }
-
 
 /*  GO INTO COLUMNS AT 769 PX OR HIGHER */
 @media only screen and (min-width: 769px) {

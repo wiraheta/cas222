@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
     var win = $(this);
 
-    if (win.width() < 1000) {
+    if (win.width() < 920) {
 
         $( ".cross" ).hide();
 
@@ -46,7 +46,7 @@ $( window ).on('resize', function() {
 
     var win = $(this);
 
-    if (win.width() < 1000) {
+    if (win.width() < 920) {
 
         $( ".cross" ).hide();
 

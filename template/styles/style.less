@@ -24,7 +24,7 @@ nav {
     .transparent;
     div {
         float: left;
-        padding: 1em 0 0 0;
+        padding: .5em 0 0 .5em;
         .hamburger {
             background:none;
             position:absolute;
@@ -54,14 +54,18 @@ nav {
             outline: none;
             z-index: 10000000000000;
         }
-        .menu {
-            padding: 1em 0 0 0;
-        }
         .fa {
             padding: 0 .25em 0 .5em;
         }
     }
+    img {
+        height: 55px;
+        padding: .5em;
+    }
     ul {
+        .menu {
+            padding: 1em 0 0 0;
+        }
         li {
             border-top: 1px solid #FF0000;
             display: block;
@@ -92,7 +96,7 @@ nav {
 
 header {
     background-color: @darkColor;
-    height: 60px;
+    height: 62px;
 }
 
 h1 {
@@ -136,14 +140,23 @@ ul {
 }
 
 main {
-    .slideshow {
-        display: none;
-    }
+    clear: both;
+    margin: 0;
     img {
-        display: block;
+        display: none;
         margin: 0 auto 0 auto;
     }
     section {
+        zoom: 1; /* For IE 6/7 */
+        &:before {
+            content: "";
+            display: table;
+        }
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
         p {
             padding: .5em 1em .5em 1em;
             text-indent: 1em;
@@ -153,6 +166,16 @@ main {
             }
         }
         ul {
+            zoom: 1; /* For IE 6/7 */
+            &:before {
+                content: "";
+                display: table;
+            }
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
             list-style-type: disc;
             list-style-position: inside;
             padding: 0 3em 1em 3em;
@@ -181,6 +204,16 @@ footer {
         padding: 0;
     }
     ul {
+        zoom: 1; /* For IE 6/7 */
+        &:before {
+            content: "";
+            display: table;
+        }
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
         margin: 1em 0 1em 0;
         li {
             display: block;
@@ -243,25 +276,28 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     }
     
     nav {
+        padding-bottom: 0;
         div {
-            padding: 1em;
+            padding: .5em 0 0 1em;
             .hamburger {
                 display: none;
             }
             .cross {
                 display: none;
             }
-            .menu {
-                display: block;
-                float: right;
-            }
             .fa {
                 padding: 0 .5em 0 .5em;
             }
         }
+        img {
+            height: 62px;
+            padding: .5em;
+        }
         ul {
             float: right;
+            padding: .5em;
             li {
+                display: block;
                 border-top: none;
                 width: auto;
                 padding: .5em 0 .5em 0;
@@ -270,14 +306,14 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     }
     
     main {
-        .slideshow {
-            display: block;
-            max-width: 50%;
-            margin-left: auto;
-            margin-right: auto;
-            padding-bottom: 1em;
-        }
         section {
+            img {
+                display: block;
+                max-width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 1em;
+            }
             ul {
                 li {
                     padding: 0 0.5em 0 0.5em;
@@ -287,7 +323,7 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     }
     
     header {
-        height: 80px;
+        height: 68px;
     }
     
     h1 {
@@ -331,13 +367,12 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
     }
     
     nav {
+        img {
+            height: 100px;
+            padding: 1em .5em 1em .5em;
+        }
         div {
-            .logo {
-                padding: 1em;
-            }
-            a {
-                padding: 1em;
-            }
+            padding: 0;
             .fa {
                 font-size: 1.9em;
                 padding: .25em;
@@ -345,24 +380,24 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
         }
         ul {
             float: right;
+            padding: 1.5em 0 1.5em 0;
             li {
-                padding: 1em 1em 1em 1em;
-                a {
-                    padding: 1em 1em 1em 1em;
-                }
+                display: block;
             }
         }
     }
     
     main {
-        .slideshow {
-            display: block;
-            max-height: 75%;
-            margin-left: auto;
-            margin-right: auto;
-            padding-bottom: 2em;
-        }
+        max-width: 1200px;
+        margin: 0 auto 0 auto;
         section {
+            img {
+                display: block;
+                max-height: 75%;
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 2em;
+            }
             p {
                 padding: 2em 2em 0 2em;
                 text-indent: 2em;
@@ -410,18 +445,8 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
         text-transform: none;
         padding: 0 2em 0 2em;
     }
-    
+
     .fa {
         font-size: 1.9em;
     }
-    
-    .float {
-        float: right;
-    }
-    
-    .wrapper {
-        max-width: 1200px;
-        margin: 0 auto 0 auto;
-    }
-    
 }
