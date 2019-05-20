@@ -1,5 +1,5 @@
 <nav>
-    <a href="<?php echo BASE_URL; ?>"><img src="images/logo.svg" alt="Ace In The Hole Multisport Events"></a>
+    <img src="<?php echo BASE_URL; ?>images/logo.svg" alt="Ace In The Hole Multisport Events">
 
     <div>
         <button class="hamburger">&#9776;</button>

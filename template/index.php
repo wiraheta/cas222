@@ -24,6 +24,7 @@
 
 <body>
     <?php include 'includes/header.inc.html.php'; ?>
+    <?php include 'includes/nav.inc.html.php'; ?>
     
     <main>
         <section>
