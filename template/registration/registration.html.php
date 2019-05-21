@@ -64,6 +64,13 @@
                         <option value="10K">10K</option>
                     </select><br>
 
+                <label for="Day">Day:</label>
+                    <select size="1" name="Day" id="Day" required>
+                        <option>Select Your Day</option>
+                        <option value="Saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                    </select><br>
+
                 <label for="Type">Participant Type:</label>
                     <select size="1" name="Type" id="Type" required>
                         <option>Select Type</option>

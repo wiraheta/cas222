@@ -11,6 +11,7 @@ if (isset($_POST['First_Name']))
     $E_Contact_Name = $_POST['E_Contact_Name'];
     $Gender = $_POST['Gender'];
     $Event = $_POST['Event'];
+    $Day = $_POST['Day'];
     $Type = $_POST['Type'];
 
     try
@@ -23,6 +24,7 @@ if (isset($_POST['First_Name']))
           E_Contact_Name = :E_Contact_Name,
           Gender = :Gender,
           Event = :Event,
+          Day = :Day,
           Type = :Type';
         $s = $pdo->prepare($sql);
         $s->bindValue(':First_Name', $First_Name);
@@ -32,6 +34,7 @@ if (isset($_POST['First_Name']))
         $s->bindValue(':E_Contact_Name', $E_Contact_Name);
         $s->bindValue(':Gender', $Gender);
         $s->bindValue(':Event', $Event);
+        $s->bindValue(':Day', $Day);
         $s->bindValue(':Type', $Type);
         $s->execute();
     }
