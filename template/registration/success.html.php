@@ -39,8 +39,8 @@
                 <b>Emergency Contact Name:</b> <?php echo htmlspecialchars($E_Contact_Name, ENT_QUOTES, 'UTF-8'); ?><br>
                 <b>Emergency Contact Number:</b> <?php echo htmlspecialchars($E_Contact_Num, ENT_QUOTES, 'UTF-8'); ?><br>
                 <b>Gender:</b> <?php echo htmlspecialchars($Gender, ENT_QUOTES, 'UTF-8'); ?><br>
-                <b>Event:</b> <?php echo htmlspecialchars($Event, ENT_QUOTES, 'UTF-8'); ?><br>
                 <b>Day:</b> <?php echo htmlspecialchars($Day, ENT_QUOTES, 'UTF-8'); ?><br>
+                <b>Event:</b> <?php echo htmlspecialchars($Event, ENT_QUOTES, 'UTF-8'); ?><br>
                 <b>Participant Type:</b> <?php echo htmlspecialchars($Type, ENT_QUOTES, 'UTF-8'); ?><br>
             </p>
         </section>
