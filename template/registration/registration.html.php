@@ -53,23 +53,23 @@
                         <option value="Non-Binary">Non-Binary</option>
                     </select><br>
 
-                <label for="Day">Day:</label>
-                    <select size="1" name="Day" id="Day" required>
-                        <option>Select Your Day</option>
-                        <option id="sat" value="Saturday">Saturday</option>
-                        <option id="sun" value="Sunday">Sunday</option>
+                <label for="Saturday">Saturday Event:</label>
+                    <select size="1" name="Saturday" id="Saturday" required>
+                        <option>Select Your Event</option>
+                        <option value="10K">10K</option>
+                        <option value="Half Marathon">Half Marathon</option>
+                        <option value="Long Course">Long Course</option>
+                        <option value="Olympic">Olympic</option>
+                        <option value="None">None</option>
                     </select><br>
 
-                <label for="Event">Event:</label>
-                    <select size="1" name="Event" id="Event" required>
+                <label for="Sunday">Sunday Event:</label>
+                    <select size="1" name="Sunday" id="Sunday" required>
                         <option>Select Your Event</option>
-                        <option id="hm" value="Half Marathon">Half Marathon</option>
-                        <option id="lc" value="Long Course">Long Course</option>
-                        <option id="o" value="Olympic">Olympic</option>
-                        <option id="s" value="Sprint">Sprint</option>
-                        <option id="sd" value="Splash n Dash">Splash n Dash</option>
-                        <option id="tri" value="Try-a-Tri">Try-a-Tri</option>
-                        <option id="10k" value="10K">10K</option>
+                        <option value="Sprint">Sprint</option>
+                        <option value="Splash n Dash">Splash n Dash</option>
+                        <option value="Try-a-Tri">Try-a-Tri</option>
+                        <option value="None">None</option>
                     </select><br>
 
                 <label for="Type">Participant Type:</label>
@@ -88,6 +88,5 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../scripts/menu.js"></script>
-    <script src="../scripts/form.js"></script>
 </body>
 </html>
