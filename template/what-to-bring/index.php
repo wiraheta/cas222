@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Ace In The Hole - Contact</title>
+    <title>Ace In The Hole - What To Bring</title>
 
     <meta name="author" content="Willy Iraheta">
-    <meta name="description" content="Ace In The Hole Multisport Events Contact">
+    <meta name="description" content="Ace In The Hole Multisport Events - What to bring">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -27,28 +27,9 @@
     
     <main>
         <section>
-            <h1>Contact</h1>
+            <h1>What To Bring</h1>
 
-            <form method="post" action=" ">
-                <label for="Name">Name:</label>
-                    <input type="text" name="Name" id="Name" required><br>
-
-                <label for="Email">Email:</label>
-                    <input type="email" name="Email" id="Email" required><br>
-                    
-                <label for="Inquiry">Question/Comment:</label>
-                    <textarea name="Inquiry" id="Inquiry" rows="5" cols="30" required></textarea><br>
-
-                <label for="Type">Type:</label>
-                    <select size="1" name="Type" id="Type" required>
-                        <option>Select Type</option>
-                        <option value="Athlete">Athlete</option>
-                        <option value="Volunteer">Volunteer</option>
-                        <option value="Interested Party">Interested Party</option>
-                    </select><br>
-
-                <input id="submit" type="submit" value="Submit">
-            </form>
+            
         </section>
     </main>
 

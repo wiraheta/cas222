@@ -159,9 +159,7 @@ main {
         }
         p {
             padding: .5em 1em .5em 1em;
-            text-indent: 1em;
             &:first-letter {
-                font-size: 125%;
                 font-weight: bold;
             }
         }
@@ -183,12 +181,27 @@ main {
                 line-height: 1.5em;
                 padding-bottom: 1em;
                 &:first-letter {
-                    font-size: 125%;
                     font-weight: bold;
                 }
                 &:last-child {
                     padding-bottom: 0;
                 }
+            }
+        }
+        form {
+            padding: .25em .5em .25em .5em;
+            label {
+                padding: .25em .5em .25em .5em;
+            }
+            input {
+                margin: .5em;
+            }
+            textarea {
+                margin: .5em;
+                width: 95%;
+            }
+            select {
+                margin: .5em;
             }
         }
     }
@@ -399,7 +412,6 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
             }
             p {
                 padding: 2em 2em 0 2em;
-                text-indent: 2em;
                 &:last-child {
                     padding-bottom: 2em;
                 }

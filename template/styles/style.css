@@ -175,10 +175,8 @@ main section:after {
 }
 main section p {
   padding: .5em 1em .5em 1em;
-  text-indent: 1em;
 }
 main section p:first-letter {
-  font-size: 125%;
   font-weight: bold;
 }
 main section ul {
@@ -202,11 +200,26 @@ main section ul li {
   padding-bottom: 1em;
 }
 main section ul li:first-letter {
-  font-size: 125%;
   font-weight: bold;
 }
 main section ul li:last-child {
   padding-bottom: 0;
+}
+main section form {
+  padding: .25em .5em .25em .5em;
+}
+main section form label {
+  padding: .25em .5em .25em .5em;
+}
+main section form input {
+  margin: .5em;
+}
+main section form textarea {
+  margin: .5em;
+  width: 95%;
+}
+main section form select {
+  margin: .5em;
 }
 footer p {
   text-align: center;
@@ -408,7 +421,6 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
   }
   main section p {
     padding: 2em 2em 0 2em;
-    text-indent: 2em;
   }
   main section p:last-child {
     padding-bottom: 2em;
