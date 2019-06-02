@@ -1,0 +1,583 @@
+@import 'palette.less';
+@import 'mixins.less';
+
+/* MOBILE STYLESHEET */
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    background-color: @lightColor;
+    color: @darkColor;
+}
+
+nav, footer {
+    background-color: @darkColor;
+    color: @lightColor;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    .transparent;
+    div {
+        float: left;
+        padding: .5em 0 0 .5em;
+        .hamburger {
+            background:none;
+            position:absolute;
+            top: 0;
+            right: 0;
+            line-height: 1.5em;
+            padding: .5em;
+            color: @lightColor;
+            border: 0;
+            font-size: 1.5em;
+            font-weight: bold;
+            cursor: pointer;
+            outline: none;
+            z-index: 10000000000000;
+        }
+        .cross {
+            background: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: .25em;
+            color: @lightColor;
+            border: 0;
+            font-size: 3em;
+            font-weight: bold;
+            cursor: pointer;
+            outline: none;
+            z-index: 10000000000000;
+        }
+        .fa {
+            padding: 0 .25em 0 .5em;
+        }
+    }
+    img {
+        height: 55px;
+        padding-top: .5em;
+    }
+    ul {
+        .menu {
+            padding: 1em 0 0 0;
+        }
+        li {
+            border-top: 1px solid #FF0000;
+            display: block;
+            float: left;
+            text-align: center;
+            font-weight: bold;
+            padding: .5em 0 .5em 0;
+            width: 100%;
+            &:hover {
+                background-color: @color1;
+            }
+            a {
+                padding: 1em;
+                text-decoration: none;
+                &:link {
+                    color: @lightColor;
+                }
+                &:visited {
+                    color: @lightColor;
+                }
+                &:hover {
+                    color: @darkColor;
+                }
+            }
+        }
+    }
+}
+
+header {
+    background-color: @darkColor;
+    height: 62px;
+}
+
+h1 {
+    .headingStyle(@darkColor; 1.6em);
+    padding: .25em 0 .25em .5em;
+}
+
+h2 {
+    .headingStyle(@lightColor; 1.4em);
+    background-color: @color1;
+    padding: .25em 0 .25em .5em;
+}
+
+h3 {
+    .headingStyle(@color1; 1.2em);
+    text-decoration: underline;
+    padding: .25em 0 .25em .5em;
+}
+
+h4 {
+    .headingStyle(@lightColor; 1em);
+    text-align: center;
+    text-transform: none;
+    background-color: @color1;
+    line-height: 2em;
+    padding-left: 0;
+}
+
+h5 {
+    .headingStyle(@color1; 1em);
+    padding: 0 0 .5em 1em;
+    text-decoration: underline;
+    text-transform: none;
+}
+
+ul {
+    li {
+        line-height: 1.5em;
+        list-style-position: outside;
+    }
+}
+
+main {
+    clear: both;
+    margin: 0;
+    img {
+        display: none;
+        margin: 0 auto 0 auto;
+    }
+    section {
+        zoom: 1; /* For IE 6/7 */
+        &:before {
+            content: "";
+            display: table;
+        }
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        p {
+            padding: .5em 1em .5em 1em;
+        }
+        ul {
+            zoom: 1; /* For IE 6/7 */
+            &:before {
+                content: "";
+                display: table;
+            }
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            list-style-type: disc;
+            list-style-position: inside;
+            padding: 0 3em 0 3em;
+            li {
+                line-height: 1.5em;
+                padding-bottom: .5em;
+                &:last-child {
+                    padding-bottom: 0;
+                }
+            }
+        }
+        form {
+            padding: .25em .5em .25em .5em;
+            label {
+                padding: .25em .5em .25em .5em;
+            }
+            input {
+                margin: .5em;
+                width: 95%;
+            }
+            textarea {
+                margin: .5em;
+                width: 95%;
+            }
+            select {
+                margin: .25em .5em .25em .5em;
+                font-size: .9em;
+                width: 95%;
+            }
+            .btn {
+                border: none;
+                margin: 1em 1em 1em .5em;
+                width: 95%;
+                background-color: @color1;
+                color: @lightColor;
+                font-weight: bold;
+                padding: .5em;
+                cursor: pointer;
+                display: inline-block;
+                &:hover {
+                    background-color: @darkColor;
+                    color: @lightColor;
+                }
+            }
+        }
+        iframe {
+            margin: .5em 1em .5em 1em;
+        }
+        table {
+            margin: .5em auto .5em auto;
+            font-size: .85em;
+            border: 1px solid black;
+            border-collapse: collapse;
+            th {
+                font-weight: bold;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            td {
+                padding: 0 .5em 0 .5em;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        }
+        .weather {
+            iframe {
+                margin: 0;
+            }
+        }
+        button {
+            border: none;
+            background-color: @color1;
+            color: @lightColor;
+            font-weight: bold;
+            padding: 1em;
+            width: 80%;
+            cursor: pointer;
+            display: inline-block;
+            margin: .5em 2.25em 1em 2.25em;
+            &:hover {
+                background-color: @darkColor;
+                color: @lightColor;
+            }
+        }
+        .accordion {
+            background-color: @lightColor;
+            color: @darkColor;
+            cursor: pointer;
+            padding: 1em;
+            margin: 0;
+            width: 100%;
+            border: solid;
+            text-align: left;
+            outline: none;
+            transition: 0.4s;
+            &:hover {
+                background-color: @color1;
+            }
+            &:after {
+                content: '\002B';
+                font-size: 1em;
+                color: @darkColor;
+                font-weight: bold;
+                float: right;
+                margin-left: 5px;
+            }
+        }
+        .active {
+            background-color: @color1;
+            color: @lightColor;
+            &:hover {
+                background-color: @color1;
+            }
+            &:after {
+                content: "\2212";
+                font-size: 1em;
+                color: @lightColor;
+                font-weight: bold;
+                float: right;
+                margin-left: 5px;
+            }
+        }
+        .panel {
+            padding: 0 1em;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    }
+}
+
+footer {
+    p {
+        text-align: center;
+        margin: 1em 0 1em 0;
+        font-weight: bold;
+    }
+    section {
+        padding: 0;
+    }
+    ul {
+        zoom: 1; /* For IE 6/7 */
+        &:before {
+            content: "";
+            display: table;
+        }
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        margin: 1em 0 1em 0;
+        li {
+            display: block;
+            float: left;
+            text-align: center;
+            width: 33.3%;
+            font-weight: bold;
+            a {
+                &:link {
+                    color: @color1;
+                }
+                &:visited {
+                    color: @color1;
+                }
+                &:hover {
+                    color: @lightColor;
+                }
+            }
+        }
+    }
+}
+
+.active {
+    background-color: @color1;
+}
+
+a {
+    text-decoration: none;
+    &:link {
+            color: @color1;
+    }
+    &:visited {
+            color: @color1;
+    }
+    &:hover {
+            color: @lightColor;
+    }
+}
+
+.fa {
+        font-size: 1.5em;
+    }
+
+.clip {
+    clip: rect(1px, 1px, 1px, 1px); 
+    position: absolute !important; 
+    height: 1px; width: 1px; 
+    overflow: hidden;
+}
+
+
+/*
+TABLET STYLESHEET
+The following CSS affects all screen sizes larger than 480 pixels wide.
+*/
+
+@media only screen and (min-width: 481px) {
+    body {
+        font-size: 18px;
+    }
+    
+    nav {
+        padding-bottom: 0;
+        div {
+            padding: .5em 0 0 1em;
+            .hamburger {
+                display: none;
+            }
+            .cross {
+                display: none;
+            }
+            .fa {
+                padding: 0 .5em 0 .5em;
+            }
+        }
+        img {
+            height: 62px;
+        }
+        ul {
+            float: right;
+            padding: .5em;
+            li {
+                display: block;
+                border-top: none;
+                width: auto;
+                padding: .5em 0 .5em 0;
+            }
+        }
+    }
+    
+    main {
+        section {
+            .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+            .dot {
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+            .act {
+                background-color: @darkColor;
+            }
+            img {
+                display: block;
+                max-width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            ul {
+                li {
+                    padding: 0 0.5em 0 0.5em;
+                }
+            }
+            iframe {
+                margin: .5em;
+            }
+        }
+    }
+    
+    header {
+        height: 68px;
+    }
+    
+    h1 {
+        .headingStyle(@color1; 1.8em);
+    }
+
+    h2 {
+        .headingStyle(@lightColor; 1.6em);
+    }
+
+    h3 {
+        .headingStyle(@color1; 1.4em);
+    }
+
+    h4 {
+        .headingStyle(@lightColor; 1.2em);
+        text-align: center;
+        text-transform: none;
+        line-height: 2em;
+    }
+    
+    h5 {
+    .headingStyle(@color1; 1em);
+    text-decoration: underline;
+    text-transform: none;
+}
+    
+    .fa {
+        font-size: 1.7em;
+    }
+}
+
+/*
+DESKTOP STYLESHEET
+The following CSS affects all screen sizes larger than 1024 pixels wide.
+*/
+
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 20px;
+    }
+    
+    nav {
+        img {
+            height: 100px;
+            padding: .9em .25em .9em .25em;
+        }
+        div {
+            padding: 0;
+            .fa {
+                font-size: 1.9em;
+                padding: .25em;
+            }
+        }
+        ul {
+            float: right;
+            padding: 1.5em 0 1.5em 0;
+            li {
+                display: block;
+            }
+        }
+    }
+    
+    main {
+        max-width: 1200px;
+        margin: 0 auto 0 auto;
+        section {
+            img {
+                display: block;
+                max-height: 75%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            p {
+                padding: 2em 2em 0 2em;
+                &:last-child {
+                    padding-bottom: 2em;
+                }
+            }
+            ul {
+                padding: 1em 3em 1em 3em;
+                li {
+                    padding: 0 0.5em 0 0.5em;
+                    }
+                }
+            }
+        }
+
+    header {
+        height: 110px;
+    }
+    
+    h1 {
+        .headingStyle(@color1; 2em);
+    }
+
+    h2 {
+        .headingStyle(@lightColor; 1.8em);
+        padding: .5em 0 .5em 1em;
+    }
+
+    h3 {
+        .headingStyle(@color1; 1.6em);
+        padding: 1em 0 0 1em;
+    }
+
+    h4 {
+        .headingStyle(@lightColor; 1.4em);
+        text-align: center;
+        text-transform: none;
+        line-height: 2em;
+    }
+    
+    h5 {
+        .headingStyle(@color1; 1em);
+        text-decoration: underline;
+        text-transform: none;
+        padding: 0 2em 0 2em;
+    }
+
+    .fa {
+        font-size: 1.9em;
+    }
+}
