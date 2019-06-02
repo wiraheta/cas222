@@ -86,6 +86,8 @@
                 end of your handlebars.
             </p>
         </section>
+
+        <section class="padding"></section>
     </main>
 
     <?php include '../includes/footer.inc.html.php'; ?>

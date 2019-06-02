@@ -30,8 +30,7 @@
             <h2>Contact Us</h2>
 
             <p>
-                Got questions or comments?<br>
-                We'd love to hear from you!
+                Got questions or comments?  We'd love to hear from you!
             </p>
 
             <p>
@@ -61,6 +60,8 @@
                 <input class="btn" id="submit" type="submit" value="Submit">
             </form>
         </section>
+
+        <section class="padding2"></section>
     </main>
 
     <?php include '../includes/footer.inc.html.php'; ?>
