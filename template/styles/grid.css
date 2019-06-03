@@ -17,23 +17,23 @@
     padding-bottom: 0.5em;
 }
 
-GROUPING  
-.group:before, .group:after { 
-    content: "";
-    display: table;
-}
+/*  GO INTO COLUMNS AT 1024 PX OR HIGHER */
+@media only screen and (min-width: 1024px) {
 
-.group:after {
-    clear: both;
-}
+    /*   GROUPING  */
+    .group:before, .group:after { 
+        content: "";
+        display: table;
+    }
 
-.group {
-    zoom: 1; /* For IE 6/7 */
-}
+    .group:after {
+        clear: both;
+    }
 
-/*  GO INTO COLUMNS AT 769 PX OR HIGHER */
-@media only screen and (min-width: 769px) {
-
+    .group {
+        zoom: 1; /* For IE 6/7 */
+    }
+   
     .span_12_of_12 {
 	width: 100%;
     }

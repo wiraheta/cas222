@@ -159,9 +159,6 @@ main {
         }
         p {
             padding: .5em 1em .5em 1em;
-            &:first-letter {
-                font-weight: bold;
-            }
         }
         ul {
             zoom: 1; /* For IE 6/7 */
@@ -176,13 +173,10 @@ main {
             }
             list-style-type: disc;
             list-style-position: inside;
-            padding: 0 3em 1em 3em;
+            padding: 0 3em 0 3em;
             li {
                 line-height: 1.5em;
-                padding-bottom: 1em;
-                &:first-letter {
-                    font-weight: bold;
-                }
+                padding-bottom: .5em;
                 &:last-child {
                     padding-bottom: 0;
                 }
@@ -195,14 +189,118 @@ main {
             }
             input {
                 margin: .5em;
+                width: 95%;
             }
             textarea {
                 margin: .5em;
                 width: 95%;
             }
             select {
-                margin: .5em;
+                margin: .25em .5em .25em .5em;
+                font-size: .9em;
+                width: 95%;
             }
+            .btn {
+                border: none;
+                margin: 1em 1em 1em .5em;
+                width: 95%;
+                background-color: @color1;
+                color: @lightColor;
+                font-weight: bold;
+                padding: .5em;
+                cursor: pointer;
+                display: inline-block;
+                &:hover {
+                    background-color: @darkColor;
+                    color: @lightColor;
+                }
+            }
+        }
+        iframe {
+            margin: .5em 1em .5em 1em;
+        }
+        table {
+            margin: .5em auto .5em auto;
+            font-size: .85em;
+            border: 1px solid black;
+            border-collapse: collapse;
+            th {
+                font-weight: bold;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            td {
+                padding: 0 .5em 0 .5em;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        }
+        .weather {
+            iframe {
+                margin: 0;
+            }
+        }
+        button {
+            border: none;
+            background-color: @color1;
+            color: @lightColor;
+            font-weight: bold;
+            padding: 1em;
+            width: 80%;
+            cursor: pointer;
+            display: inline-block;
+            margin: .5em 2.25em 1em 2.25em;
+            &:hover {
+                background-color: @darkColor;
+                color: @lightColor;
+            }
+        }
+        .accordion {
+            background-color: @lightColor;
+            color: @darkColor;
+            cursor: pointer;
+            padding: 1em;
+            margin: 0;
+            width: 100%;
+            text-align: left;
+            outline: none;
+            transition: 0.4s;
+            &:hover {
+                background-color: #C4C4C4;
+                color: @darkColor;
+            }
+            &:after {
+                content: '\002B';
+                font-size: 1em;
+                color: @darkColor;
+                font-weight: bold;
+                float: right;
+                margin-left: 5px;
+            }
+        }
+        .active {
+            background-color: #C4C4C4;
+            color: @darkColor;
+            &:hover {
+                background-color: #C4C4C4;
+                color: @darkColor;
+            }
+            &:after {
+                content: "\2212";
+                font-size: 1em;
+                color: @darkColor;
+                font-weight: bold;
+                float: right;
+                margin-left: 5px;
+            }
+        }
+        .panel {
+            padding: 0 1em;
+            background-color: white;
+            border-bottom: solid;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
         }
     }
 }
@@ -319,17 +417,82 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     
     main {
         section {
+            .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+            .dot {
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+            .act {
+                background-color: @darkColor;
+            }
             img {
                 display: block;
-                max-width: 50%;
+                max-width: 60%;
                 margin-left: auto;
                 margin-right: auto;
-                padding-bottom: 1em;
+                padding: .5em 0 .5em 0;
             }
             ul {
                 li {
                     padding: 0 0.5em 0 0.5em;
                 }
+            }
+            iframe {
+                margin: 0 2.5em 1em 2.5em;
+            }
+            table {
+                margin: 1em auto 1em auto;
+                font-size: 1em;
+                td {
+                    padding: 0 1em 0 1em;
+                }
+            }
+            p {
+                padding: 1em 2em 1em 2em;
+            }
+            button {
+                margin: 1em 10% 1em 10%;
+            }
+        }
+        .col2 {
+            width: 50%;
+            float: left;
+            display: block;
+        }
+        .padding {
+            padding-bottom: 520px;
+        }
+        .padding2 {
+            padding-bottom: 230px;
+        }
+        .padding3 {
+            padding: 0 0 1.5em 0;
+        }
+        .group {
+            zoom: 1;
+            &:before {
+                content: "";
+                display: table;
+            }
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
             }
         }
     }
@@ -408,22 +571,65 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
                 max-height: 75%;
                 margin-left: auto;
                 margin-right: auto;
-                padding-bottom: 2em;
-            }
-            p {
-                padding: 2em 2em 0 2em;
-                &:last-child {
-                    padding-bottom: 2em;
-                }
             }
             ul {
                 padding: 1em 3em 1em 3em;
                 li {
                     padding: 0 0.5em 0 0.5em;
-                    }
                 }
             }
+            form {
+                padding: 1em 2em 1em 2em;
+                input {
+                    margin: 1em;
+                    font-size: 1em;
+                }
+                textarea {
+                    margin: 1em;
+                }
+                select {
+                    font-size: 1em;
+                    margin: 1em;
+                }
+                .btn {
+                    padding: 1em;
+                }
+            }
+            iframe {
+                margin: 0 7.5em 1em 7.5em;
+            }
+            table {
+                margin: 2em auto 1em auto;
+                font-size: 1em;
+                td {
+                    padding: 0 2em 0 2em;
+                }
+            }
+            p {
+                padding: 1em 2em 1em 2em;
+            }
+            button {
+                margin: 2em 10% 2em 10%;
+            }
+            .accordion {
+                padding: 2em;
+            }
         }
+        .col3 {
+            width: 33.3%;
+            float: left;
+            display: block;
+        }
+        .padding {
+            padding-bottom: 500px;
+        }
+        .padding2 {
+            padding-bottom: 200px;
+        }
+        .padding3 {
+            padding: 0 0 1.5em 0;
+        }
+    }
 
     header {
         height: 110px;
@@ -440,7 +646,8 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
 
     h3 {
         .headingStyle(@color1; 1.6em);
-        padding: 1em 0 0 1em;
+        padding: 1em 0 0 0;
+        text-align: center;
     }
 
     h4 {
