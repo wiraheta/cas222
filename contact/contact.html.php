@@ -29,15 +29,11 @@
         <section>
             <h2>Contact Us</h2>
 
-            <p>
-                Got questions or comments?  We'd love to hear from you!
-            </p>
-
-            <p>
-                Please fill out the form below and we will get back to you as soon as we can.
-            </p>
-
             <h3>Contact</h3>
+
+            <p>
+                Got questions or comments?  We'd love to hear from you!  Please fill out the form below and we will get back to you as soon as we can.
+            </p>
 
             <form method="post" action=" ">
                 <label for="Name">Name:</label><br>

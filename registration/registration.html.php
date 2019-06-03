@@ -28,34 +28,36 @@
     <main>
         <h2>Registration</h2>
 
+        <div class="group">
+            <section class="col2">
+                <h3>Cost</h3>
+
+                <ul>
+                    <li>Long Course: $240</li>	  	
+                    <li>Olympic: $110</li>	  	
+                    <li>10K: $50</li>	  	
+                    <li>Half Marathon: $75</li>	
+                    <li>Sprint: $90</li>
+                    <li>Try-a-Tri: $65</li>
+                <ul>
+            </section>
+
+            <section class="col2">
+                <h3>Cost Includes</h3>
+
+                <ul>
+                    <li>Food & Beer</li>
+                    <li>Access to the weekend’s live entertainment & Fitness Expo</li>
+                    <li>Commemorative Finisher medal</li>
+                    <li>Accurate Chip Timing for competitive races</li>
+                    <li>Ace in the Hole Multisport Weekend Tech Shirt*</li>
+                    <li>Post-event party & entertainment</li>
+                </ul>
+            </section>
+        </div>
+
         <section>
-            <h3>Cost</h3>
-
-            <ul>
-                <li>Long Course: $240</li>	  	
-                <li>Olympic: $110</li>	  	
-                <li>10K: $50</li>	  	
-                <li>Half Marathon: $75</li>	
-                <li>Sprint: $90</li>
-                <li>Try-a-Tri: $65</li>
-            <ul>
-        </section>
-
-        <section>
-            <h3>Cost Includes</h3>
-
-            <ul>
-                <li>Food & Beer</li>
-                <li>Access to the weekend’s live entertainment & Fitness Expo</li>
-                <li>Commemorative Finisher medal</li>
-                <li>Accurate Chip Timing for competitive races</li>
-                <li>Ace in the Hole Multisport Weekend Tech Shirt</li>
-                <li>Post-event party & entertainment</li>
-            </ul>
-
-            <p>
-                NOTE: Tech shirts guaranteed to pre-registered participants only.
-            </p>
+            <p>*NOTE: Tech shirts guaranteed to pre-registered participants only.</p>
         </section>
 
         <section>

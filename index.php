@@ -119,7 +119,7 @@
                 The Annual Ace in the Hole Multisport Weekend is a legendary event in the Oregon triathlon and running community. 
                 It has become a traditional destination race for athletes from across the nation. 
             </p>
-
+            
             <p>
                 There is something for every level of athletic ability. The weekend includes a first timer triathlon, a sprint, Olympic, 
                 and Half-Iron triathlons and 10K and Half marathon runs. Come to experience your first race or come to compete to win, 
@@ -127,14 +127,20 @@
             </p>
         </section>
 
-        <section class="col2">
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcas222cascade%2F&tabs=timeline&width=280&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
-            width="280" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-        </section>
+        <div class="group">
+            <section class="col2">
+                <h3>facebook feed</h3>
 
-        <section>
-            <a class="twitter-timeline" data-width="280" data-height="400" href="https://twitter.com/pcccas222?ref_src=twsrc%5Etfw">Tweets by pcccas222</a> 
-        </section>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcas222cascade%2F&tabs=timeline&width=280&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+                width="280" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            </section>
+
+            <section class="col2">
+                <h3>Twitter feed</h3>
+                
+                <a class="twitter-timeline" data-width="280" data-height="400" href="https://twitter.com/pcccas222?ref_src=twsrc%5Etfw">Tweets by pcccas222</a> 
+            </section>
+        </div>
     </main>
 
     <?php include 'includes/footer.inc.html.php'; ?>

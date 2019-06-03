@@ -262,12 +262,12 @@ main {
             padding: 1em;
             margin: 0;
             width: 100%;
-            border: solid;
             text-align: left;
             outline: none;
             transition: 0.4s;
             &:hover {
-                background-color: @color1;
+                background-color: #C4C4C4;
+                color: @darkColor;
             }
             &:after {
                 content: '\002B';
@@ -279,15 +279,16 @@ main {
             }
         }
         .active {
-            background-color: @color1;
-            color: @lightColor;
+            background-color: #C4C4C4;
+            color: @darkColor;
             &:hover {
-                background-color: @color1;
+                background-color: #C4C4C4;
+                color: @darkColor;
             }
             &:after {
                 content: "\2212";
                 font-size: 1em;
-                color: @lightColor;
+                color: @darkColor;
                 font-weight: bold;
                 float: right;
                 margin-left: 5px;
@@ -296,6 +297,7 @@ main {
         .panel {
             padding: 0 1em;
             background-color: white;
+            border-bottom: solid;
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.2s ease-out;
@@ -464,7 +466,7 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
                 padding: 1em 2em 1em 2em;
             }
             button {
-                margin: 1em 5em 1em 5em;
+                margin: 1em 10% 1em 10%;
             }
         }
         .col2 {
@@ -473,10 +475,25 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
             display: block;
         }
         .padding {
-            padding-bottom: 500px;
+            padding-bottom: 520px;
         }
         .padding2 {
-            padding-bottom: 200px;
+            padding-bottom: 230px;
+        }
+        .padding3 {
+            padding: 0 0 1.5em 0;
+        }
+        .group {
+            zoom: 1;
+            &:before {
+                content: "";
+                display: table;
+            }
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
         }
     }
     
@@ -555,18 +572,62 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
                 margin-left: auto;
                 margin-right: auto;
             }
-            p {
-                padding: 2em 2em 0 2em;
-                &:last-child {
-                    padding-bottom: 2em;
-                }
-            }
             ul {
                 padding: 1em 3em 1em 3em;
                 li {
                     padding: 0 0.5em 0 0.5em;
                 }
             }
+            form {
+                padding: 1em 2em 1em 2em;
+                input {
+                    margin: 1em;
+                    font-size: 1em;
+                }
+                textarea {
+                    margin: 1em;
+                }
+                select {
+                    font-size: 1em;
+                    margin: 1em;
+                }
+                .btn {
+                    padding: 1em;
+                }
+            }
+            iframe {
+                margin: 0 7.5em 1em 7.5em;
+            }
+            table {
+                margin: 2em auto 1em auto;
+                font-size: 1em;
+                td {
+                    padding: 0 2em 0 2em;
+                }
+            }
+            p {
+                padding: 1em 2em 1em 2em;
+            }
+            button {
+                margin: 2em 10% 2em 10%;
+            }
+            .accordion {
+                padding: 2em;
+            }
+        }
+        .col3 {
+            width: 33.3%;
+            float: left;
+            display: block;
+        }
+        .padding {
+            padding-bottom: 500px;
+        }
+        .padding2 {
+            padding-bottom: 200px;
+        }
+        .padding3 {
+            padding: 0 0 1.5em 0;
         }
     }
 
@@ -585,7 +646,8 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
 
     h3 {
         .headingStyle(@color1; 1.6em);
-        padding: 1em 0 0 1em;
+        padding: 1em 0 0 0;
+        text-align: center;
     }
 
     h4 {

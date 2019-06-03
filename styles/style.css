@@ -277,13 +277,13 @@ main section .accordion {
   padding: 1em;
   margin: 0;
   width: 100%;
-  border: solid;
   text-align: left;
   outline: none;
   transition: 0.4s;
 }
 main section .accordion:hover {
-  background-color: #FF0000;
+  background-color: #C4C4C4;
+  color: #000000;
 }
 main section .accordion:after {
   content: '\002B';
@@ -294,16 +294,17 @@ main section .accordion:after {
   margin-left: 5px;
 }
 main section .active {
-  background-color: #FF0000;
-  color: #FFFFFF;
+  background-color: #C4C4C4;
+  color: #000000;
 }
 main section .active:hover {
-  background-color: #FF0000;
+  background-color: #C4C4C4;
+  color: #000000;
 }
 main section .active:after {
   content: "\2212";
   font-size: 1em;
-  color: #FFFFFF;
+  color: #000000;
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -311,6 +312,7 @@ main section .active:after {
 main section .panel {
   padding: 0 1em;
   background-color: white;
+  border-bottom: solid;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -461,7 +463,7 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     padding: 1em 2em 1em 2em;
   }
   main section button {
-    margin: 1em 5em 1em 5em;
+    margin: 1em 10% 1em 10%;
   }
   main .col2 {
     width: 50%;
@@ -469,10 +471,25 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     display: block;
   }
   main .padding {
-    padding-bottom: 500px;
+    padding-bottom: 520px;
   }
   main .padding2 {
-    padding-bottom: 200px;
+    padding-bottom: 230px;
+  }
+  main .padding3 {
+    padding: 0 0 1.5em 0;
+  }
+  main .group {
+    zoom: 1;
+  }
+  main .group:before {
+    content: "";
+    display: table;
+  }
+  main .group:after {
+    content: "";
+    display: table;
+    clear: both;
   }
   header {
     height: 68px;
@@ -562,17 +579,61 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
     margin-left: auto;
     margin-right: auto;
   }
-  main section p {
-    padding: 2em 2em 0 2em;
-  }
-  main section p:last-child {
-    padding-bottom: 2em;
-  }
   main section ul {
     padding: 1em 3em 1em 3em;
   }
   main section ul li {
     padding: 0 0.5em 0 0.5em;
+  }
+  main section form {
+    padding: 1em 2em 1em 2em;
+  }
+  main section form input {
+    margin: 1em;
+    font-size: 1em;
+  }
+  main section form textarea {
+    margin: 1em;
+  }
+  main section form select {
+    font-size: 1em;
+    margin: 1em;
+  }
+  main section form .btn {
+    padding: 1em;
+  }
+  main section iframe {
+    margin: 0 7.5em 1em 7.5em;
+  }
+  main section table {
+    margin: 2em auto 1em auto;
+    font-size: 1em;
+  }
+  main section table td {
+    padding: 0 2em 0 2em;
+  }
+  main section p {
+    padding: 1em 2em 1em 2em;
+  }
+  main section button {
+    margin: 2em 10% 2em 10%;
+  }
+  main section .accordion {
+    padding: 2em;
+  }
+  main .col3 {
+    width: 33.3%;
+    float: left;
+    display: block;
+  }
+  main .padding {
+    padding-bottom: 500px;
+  }
+  main .padding2 {
+    padding-bottom: 200px;
+  }
+  main .padding3 {
+    padding: 0 0 1.5em 0;
   }
   header {
     height: 110px;
@@ -601,7 +662,8 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
     line-height: 1.6em;
     text-transform: uppercase;
     font-family: 'Noto Serif', serif;
-    padding: 1em 0 0 1em;
+    padding: 1em 0 0 0;
+    text-align: center;
   }
   h4 {
     color: #FFFFFF;

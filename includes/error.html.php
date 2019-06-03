@@ -36,6 +36,8 @@
             <p>
                 <?php echo $error; ?>
             </p>
+
+            <p class="padding2"></p>
         </section>
     </main>
 

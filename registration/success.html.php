@@ -46,6 +46,8 @@
                 Sunday Event: <?php echo htmlspecialchars($Sunday, ENT_QUOTES, 'UTF-8'); ?><br>
                 Participant Type: <?php echo htmlspecialchars($Type, ENT_QUOTES, 'UTF-8'); ?>
             </p>
+
+            <p class="padding3"></p>
         </section>
     </main>
 
