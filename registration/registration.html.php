@@ -88,9 +88,9 @@
                 <label for="E_Contact_Num">Emergency Contact Number:</label><br>
                     <input type="phone" name="E_Contact_Num" id="E_Contact_Num" required><br>
                 
-                <label for="Gender">Gender:</label><br>
+                <label for="Gender">Gender Identification:</label><br>
                     <select size="1" name="Gender" id="Gender" required>
-                        <option>Select Your Gender</option>
+                        <option>Select Your Gender Identification</option>
                         <option value="Female">Female</option>
                         <option value="Male">Male</option>
                         <option value="Non-Binary">Non-Binary</option>

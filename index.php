@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Ace In The Hole</title>
+    <title>Ace In The Hole Multisport Events</title>
 
     <meta name="author" content="Willy Iraheta">
     <meta name="description" content="Ace In The Hole Multisport Events offers running and triathlon events to athletes of all shapes and sizes,
@@ -30,6 +30,8 @@
         <section>
             <h2>About Ace In the Hole Multisport Events</h2>
         </section>
+
+        <img class="image" src="images/bike.jpg" alt="Cyclist" style="width:100%">
 
         <section class="slideshow-container">
             <div class="mySlides fade">

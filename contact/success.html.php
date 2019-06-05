@@ -39,7 +39,7 @@
                 Name: <?php echo htmlspecialchars($Name, ENT_QUOTES, 'UTF-8'); ?><br>
                 Email: <?php echo htmlspecialchars($Email, ENT_QUOTES, 'UTF-8'); ?><br>
                 Question/Comment: <?php echo htmlspecialchars($Inquiry, ENT_QUOTES, 'UTF-8'); ?><br>
-                Type: <?php echo htmlspecialchars($Type, ENT_QUOTES, 'UTF-8'); ?>
+                Role: <?php echo htmlspecialchars($Type, ENT_QUOTES, 'UTF-8'); ?>
             </p>
 
             <p class="padding3"></p>

@@ -31,45 +31,43 @@
         </section>
 
         <div class="group">
-            <section class="col2">
-                <h3>Long Course SWIM – 1.2 Miles</h3> 
+            <h3>Long Course</h3>
+
+            <section class="col3">
+                <h5>SWIM – 1.2 Miles</h5> 
 
                 <p>
                     Participants will make two counter-clockwise loops. Large buoys will mark the turn points. 
                     Kayakers will be positioned on the water to support the swimmers. Medical support will be present on the beach.
                 </p>
-
-                <button onclick="window.location.href = '<?php echo BASE_URL; ?>registration/';">Register Now</button>
             </section>
 
-            <section class="col2">
-                <h3>Long Course RUN – 13.1 Miles</h3>
+            <section class="col3">
+                <h5>RUN – 13.1 Miles</h5>
 
                 <p>
                     A mostly flat loop course on widely paved bike paths that traverse through and around this beautiful 
                     and scenic destination resort (two hills total with a minimal elevation gain).
                 </p>
-
-                <button onclick="window.location.href = '<?php echo BASE_URL; ?>registration/';">Register Now</button>
             </section>
-        </div>
 
-        <div class="group">
-            <section class="col2">
-                <h3>Long Course BIKE – 58 Miles</h3> 
+            <section class="col3">
+                <h5>BIKE – 58 Miles</h5> 
 
                 <p>
                     A scenic point-to-point course that travels over gently rolling hills prior to three hard climbs. 
                     The bike course will be marked with large directional signage and there will be course marshals at 
                     key intersections to help direct you.
                 </p> 
-
-                <p class="padding3"></p>
-
-                <button onclick="window.location.href = '<?php echo BASE_URL; ?>registration/';">Register Now</button>
             </section>
 
-            <section class="col2">
+            <section>
+                <button onclick="window.location.href = '<?php echo BASE_URL; ?>registration/';">Register Now</button>
+            </section>
+        </div>
+
+        <div class="group">
+            <section>
                 <h3>10k</h3> 
 
                 <p>
@@ -83,40 +81,40 @@
         </div>
 
         <div class="group">
-            <section class="col2">
-                <h3>OLYMPIC SWIM – 1,500 Meters</h3>
+            <h3>OLYMPIC COURSE</h3>
+
+            <section class="col3">
+                <h5>SWIM – 1,500 Meters</h5>
 
                 <p>
                     Participants will make two counter-clockwise loops. Large buoys will mark the turn points. 
                     Kayakers will be positioned on the water to support the swimmers. Medical support will be present on the beach.
                 </p>
-
-                <button onclick="window.location.href = '<?php echo BASE_URL; ?>registration/';">Register Now</button>
             </section>
 
-            <section class="col2">
-                <h3>OLYMPIC BIKE – 28 Miles</h3>
+            <section class="col3">
+                <h5>BIKE – 28 Miles</h5>
 
                 <p>
                     A scenic point-to-point course that travels over gently rolling hills. 
                     The bike course will be marked with large directional signage and course marshals will be present at key intersections.
                 </p> 
-
-                <button onclick="window.location.href = '<?php echo BASE_URL; ?>registration/';">Register Now</button>
             </section>
-        </div>
- 
-        <section>
-                <h3>OLYMPIC RUN – 10K</h3>
+
+            <section class="col3">
+                <h5>RUN – 10K</h5>
 
                 <p>
                     A mostly flat loop course on widely paved bike paths that traverse through and around this beautiful and 
                     scenic destination resort (one hill total with a minimal elevation gain).
                 </p>
+            </section>
 
+            <section>
                 <button onclick="window.location.href = '<?php echo BASE_URL; ?>registration/';">Register Now</button>
-        </section>
-
+            </section>
+        </div>
+ 
         <div class="group">
             <section class="col2">
                 <h3>Splash n' Dash</h3>
@@ -169,16 +167,7 @@
             </section>
         </div>
 
-        <section>
-            <h3>WATER TEMPERATURE</h3> 
-            
-            <p>
-                It is expected to be between 62 – 66 degrees. The temperature will be taken on Friday and the morning of the race. 
-                Wetsuits are recommended.
-            </p>
-
-            <p class="padding3"></p>
-        </section>
+        <p class="padding3"></p>
     </main>
 
     <?php include '../includes/footer.inc.html.php'; ?>

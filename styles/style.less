@@ -7,6 +7,7 @@ body {
     font-family: 'Noto Sans', sans-serif;
     font-size: 16px;
     line-height: 1.5em;
+    background-image: url("../images/pw_maze_black_@2X.png");
     background-color: @lightColor;
     color: @darkColor;
 }
@@ -127,7 +128,7 @@ h4 {
 
 h5 {
     .headingStyle(@color1; 1em);
-    padding: 0 0 .5em 1em;
+    padding: .5em 1em .5em 1em;
     text-decoration: underline;
     text-transform: none;
 }
@@ -140,11 +141,14 @@ ul {
 }
 
 main {
+    background-color: @lightColor;
     clear: both;
     margin: 0;
     img {
-        display: none;
         margin: 0 auto 0 auto;
+    }
+    .slideshow-container {
+        display: none;
     }
     section {
         zoom: 1; /* For IE 6/7 */
@@ -330,7 +334,7 @@ footer {
             display: block;
             float: left;
             text-align: center;
-            width: 33.3%;
+            width: 50%;
             font-weight: bold;
             a {
                 &:link {
@@ -416,6 +420,12 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     }
     
     main {
+        .image {
+            display: none;
+        }
+        .slideshow-container {
+            display: initial;
+        }
         section {
             .slideshow-container {
                 max-width: 1000px;
@@ -522,8 +532,6 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     
     h5 {
     .headingStyle(@color1; 1em);
-    text-decoration: underline;
-    text-transform: none;
 }
     
     .fa {
@@ -659,9 +667,8 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
     
     h5 {
         .headingStyle(@color1; 1em);
-        text-decoration: underline;
-        text-transform: none;
-        padding: 0 2em 0 2em;
+        padding: 1em 2em 1em 2em;
+        text-align: center;
     }
 
     .fa {

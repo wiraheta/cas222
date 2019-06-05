@@ -79,6 +79,15 @@
         </section>
 
         <section>
+            <button class="accordion">What will the water temperature be like?</button>
+
+            <p class="panel">
+                It is expected to be between 62 – 66 degrees. The temperature will be taken on Friday and the morning of the race. 
+                Wetsuits are recommended.
+            </p>
+        </section>
+
+        <section>
             <button class="accordion">Do I have to use a road or racing bike?</button>
 
             <p class="panel">

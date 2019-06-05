@@ -41,7 +41,7 @@
                 Email: <?php echo htmlspecialchars($Email, ENT_QUOTES, 'UTF-8'); ?><br>
                 Emergency Contact Name: <?php echo htmlspecialchars($E_Contact_Name, ENT_QUOTES, 'UTF-8'); ?><br>
                 Emergency Contact Number: <?php echo htmlspecialchars($E_Contact_Num, ENT_QUOTES, 'UTF-8'); ?><br>
-                Gender: <?php echo htmlspecialchars($Gender, ENT_QUOTES, 'UTF-8'); ?><br>
+                Gender Identification: <?php echo htmlspecialchars($Gender, ENT_QUOTES, 'UTF-8'); ?><br>
                 Saturday Event: <?php echo htmlspecialchars($Saturday, ENT_QUOTES, 'UTF-8'); ?><br>
                 Sunday Event: <?php echo htmlspecialchars($Sunday, ENT_QUOTES, 'UTF-8'); ?><br>
                 Participant Type: <?php echo htmlspecialchars($Type, ENT_QUOTES, 'UTF-8'); ?>

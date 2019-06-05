@@ -8,6 +8,7 @@ body {
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5em;
+  background-image: url("../images/pw_maze_black_@2X.png");
   background-color: #FFFFFF;
   color: #000000;
 }
@@ -144,7 +145,7 @@ h5 {
   line-height: 1em;
   text-transform: uppercase;
   font-family: 'Noto Serif', serif;
-  padding: 0 0 .5em 1em;
+  padding: .5em 1em .5em 1em;
   text-decoration: underline;
   text-transform: none;
 }
@@ -153,12 +154,15 @@ ul li {
   list-style-position: outside;
 }
 main {
+  background-color: #FFFFFF;
   clear: both;
   margin: 0;
 }
 main img {
-  display: none;
   margin: 0 auto 0 auto;
+}
+main .slideshow-container {
+  display: none;
 }
 main section {
   zoom: 1;
@@ -343,7 +347,7 @@ footer ul li {
   display: block;
   float: left;
   text-align: center;
-  width: 33.3%;
+  width: 50%;
   font-weight: bold;
 }
 footer ul li a:link {
@@ -415,6 +419,12 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     border-top: none;
     width: auto;
     padding: .5em 0 .5em 0;
+  }
+  main .image {
+    display: none;
+  }
+  main .slideshow-container {
+    display: initial;
   }
   main section .slideshow-container {
     max-width: 1000px;
@@ -536,8 +546,6 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     line-height: 1em;
     text-transform: uppercase;
     font-family: 'Noto Serif', serif;
-    text-decoration: underline;
-    text-transform: none;
   }
   .fa {
     font-size: 1.7em;
@@ -683,9 +691,8 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
     line-height: 1em;
     text-transform: uppercase;
     font-family: 'Noto Serif', serif;
-    text-decoration: underline;
-    text-transform: none;
-    padding: 0 2em 0 2em;
+    padding: 1em 2em 1em 2em;
+    text-align: center;
   }
   .fa {
     font-size: 1.9em;

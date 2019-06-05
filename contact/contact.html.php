@@ -45,9 +45,9 @@
                 <label for="Inquiry">Question/Comment:</label><br>
                     <textarea name="Inquiry" id="Inquiry" rows="5" cols="30" required></textarea><br>
 
-                <label for="Type">Type:</label><br>
+                <label for="Type">Role:</label><br>
                     <select size="1" name="Type" id="Type" required>
-                        <option>Select Type</option>
+                        <option>Select Role</option>
                         <option value="Athlete">Athlete</option>
                         <option value="Volunteer">Volunteer</option>
                         <option value="Interested Party">Interested Party</option>
