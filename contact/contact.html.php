@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Ace In The Hole - Contact</title>
+    <title>Ace In The Hole Multisport Events - Contact</title>
 
     <meta name="author" content="Willy Iraheta">
     <meta name="description" content="Ace In The Hole Multisport Events Contact">

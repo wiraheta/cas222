@@ -31,19 +31,19 @@
             <h2>About Ace In the Hole Multisport Events</h2>
         </section>
 
-        <img class="image" src="images/bike.jpg" alt="Cyclist" style="width:100%">
+        <img class="image" src="images/runners.jpg" alt="Runners" style="width:100%">
 
         <section class="slideshow-container">
             <div class="mySlides fade">
-                <img src="images/bike.jpg" alt="Cyclist" style="width:100%">
+                <img src="images/runners.jpg" alt="Runners" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-                <img src="images/run.jpg" alt="Runners" style="width:100%">
+                <img src="images/cyclists.jpg" alt="Cyclists" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-                <img src="images/swim.jpg" alt="Swimmer" style="width:100%">
+                <img src="images/swimmers.jpg" alt="Swimmers" style="width:100%">
             </div>
         </section>
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Ace In The Hole - What To Bring</title>
+    <title>Ace In The Hole Multisport Events - What To Bring</title>
 
     <meta name="author" content="Willy Iraheta">
     <meta name="description" content="Ace In The Hole Multisport Events - What to bring">
