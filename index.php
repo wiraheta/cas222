@@ -39,11 +39,11 @@
             </div>
 
             <div class="mySlides fade">
-                <img src="images/cyclists.jpg" alt="Cyclists" style="width:100%">
+                <img src="images/cyclist2.jpg" alt="Cyclists" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-                <img src="images/swimmers.jpg" alt="Swimmers" style="width:100%">
+                <img src="images/swimmers1.jpg" alt="Swimmers" style="width:100%">
             </div>
         </section>
 
