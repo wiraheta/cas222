@@ -12,12 +12,9 @@ body {
   background-color: #FFFFFF;
   color: #000000;
 }
-nav,
-footer {
+nav {
   background-color: #000000;
   color: #FFFFFF;
-}
-nav {
   position: fixed;
   top: 0;
   width: 100%;
@@ -164,65 +161,65 @@ main img {
 main .slideshow-container {
   display: none;
 }
-main section {
+section {
   zoom: 1;
   /* For IE 6/7 */
 }
-main section:before {
+section:before {
   content: "";
   display: table;
 }
-main section:after {
+section:after {
   content: "";
   display: table;
   clear: both;
 }
-main section p {
+section p {
   padding: .5em 1em .5em 1em;
 }
-main section ul {
+section ul {
   zoom: 1;
   /* For IE 6/7 */
   list-style-type: disc;
   list-style-position: inside;
   padding: 0 3em 0 3em;
 }
-main section ul:before {
+section ul:before {
   content: "";
   display: table;
 }
-main section ul:after {
+section ul:after {
   content: "";
   display: table;
   clear: both;
 }
-main section ul li {
+section ul li {
   line-height: 1.5em;
   padding-bottom: .5em;
 }
-main section ul li:last-child {
+section ul li:last-child {
   padding-bottom: 0;
 }
-main section form {
+section form {
   padding: .25em .5em .25em .5em;
 }
-main section form label {
+section form label {
   padding: .25em .5em .25em .5em;
 }
-main section form input {
+section form input {
   margin: .5em;
   width: 95%;
 }
-main section form textarea {
+section form textarea {
   margin: .5em;
   width: 95%;
 }
-main section form select {
+section form select {
   margin: .25em .5em .25em .5em;
   font-size: .9em;
   width: 95%;
 }
-main section form .btn {
+section form .btn {
   border: none;
   margin: 1em 1em 1em .5em;
   width: 95%;
@@ -233,33 +230,33 @@ main section form .btn {
   cursor: pointer;
   display: inline-block;
 }
-main section form .btn:hover {
+section form .btn:hover {
   background-color: #000000;
   color: #FFFFFF;
 }
-main section iframe {
+section iframe {
   margin: .5em 1em .5em 1em;
 }
-main section table {
+section table {
   margin: .5em auto .5em auto;
   font-size: .85em;
   border: 1px solid black;
   border-collapse: collapse;
 }
-main section table th {
+section table th {
   font-weight: bold;
   border: 1px solid black;
   border-collapse: collapse;
 }
-main section table td {
+section table td {
   padding: 0 .5em 0 .5em;
   border: 1px solid black;
   border-collapse: collapse;
 }
-main section .weather iframe {
+section .weather iframe {
   margin: 0;
 }
-main section button {
+section button {
   border: none;
   background-color: #FF0000;
   color: #FFFFFF;
@@ -270,11 +267,11 @@ main section button {
   display: inline-block;
   margin: .5em 2.25em 1em 2.25em;
 }
-main section button:hover {
+section button:hover {
   background-color: #000000;
   color: #FFFFFF;
 }
-main section .accordion {
+section .accordion {
   background-color: #FFFFFF;
   color: #000000;
   cursor: pointer;
@@ -285,11 +282,11 @@ main section .accordion {
   outline: none;
   transition: 0.4s;
 }
-main section .accordion:hover {
+section .accordion:hover {
   background-color: #C4C4C4;
   color: #000000;
 }
-main section .accordion:after {
+section .accordion:after {
   content: '\002B';
   font-size: 1em;
   color: #000000;
@@ -297,15 +294,15 @@ main section .accordion:after {
   float: right;
   margin-left: 5px;
 }
-main section .active {
+section .active {
   background-color: #C4C4C4;
   color: #000000;
 }
-main section .active:hover {
+section .active:hover {
   background-color: #C4C4C4;
   color: #000000;
 }
-main section .active:after {
+section .active:after {
   content: "\2212";
   font-size: 1em;
   color: #000000;
@@ -313,13 +310,17 @@ main section .active:after {
   float: right;
   margin-left: 5px;
 }
-main section .panel {
+section .panel {
   padding: 0 1em;
   background-color: white;
   border-bottom: solid;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+footer {
+  background-color: #000000;
+  color: #FFFFFF;
 }
 footer p {
   text-align: center;
@@ -426,18 +427,18 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
   main .slideshow-container {
     display: initial;
   }
-  main section .slideshow-container {
+  section .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
   }
-  main section .fade {
+  section .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
   }
-  main section .dot {
+  section .dot {
     height: 15px;
     width: 15px;
     margin: 0 2px;
@@ -446,57 +447,57 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     display: inline-block;
     transition: background-color 0.6s ease;
   }
-  main section .act {
+  section .act {
     background-color: #000000;
   }
-  main section img {
+  section img {
     display: block;
     max-width: 60%;
     margin-left: auto;
     margin-right: auto;
     padding: .5em 0 .5em 0;
   }
-  main section ul li {
+  section ul li {
     padding: 0 0.5em 0 0.5em;
   }
-  main section iframe {
+  section iframe {
     margin: 0 2.5em 1em 2.5em;
   }
-  main section table {
+  section table {
     margin: 1em auto 1em auto;
     font-size: 1em;
   }
-  main section table td {
+  section table td {
     padding: 0 1em 0 1em;
   }
-  main section p {
+  section p {
     padding: 1em 2em 1em 2em;
   }
-  main section button {
+  section button {
     margin: 1em 10% 1em 10%;
   }
-  main .col2 {
+  .col2 {
     width: 50%;
     float: left;
     display: block;
   }
-  main .padding {
+  .padding {
     padding-bottom: 520px;
   }
-  main .padding2 {
+  .padding2 {
     padding-bottom: 230px;
   }
-  main .padding3 {
+  .padding3 {
     padding: 0 0 1.5em 0;
   }
-  main .group {
+  .group {
     zoom: 1;
   }
-  main .group:before {
+  .group:before {
     content: "";
     display: table;
   }
-  main .group:after {
+  .group:after {
     content: "";
     display: table;
     clear: both;
@@ -581,66 +582,66 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
     max-width: 1200px;
     margin: 0 auto 0 auto;
   }
-  main section img {
+  section img {
     display: block;
     max-height: 75%;
     margin-left: auto;
     margin-right: auto;
   }
-  main section ul {
+  section ul {
     padding: 1em 3em 1em 3em;
   }
-  main section ul li {
+  section ul li {
     padding: 0 0.5em 0 0.5em;
   }
-  main section form {
+  section form {
     padding: 1em 2em 1em 2em;
   }
-  main section form input {
+  section form input {
     margin: 1em;
     font-size: 1em;
   }
-  main section form textarea {
+  section form textarea {
     margin: 1em;
   }
-  main section form select {
+  section form select {
     font-size: 1em;
     margin: 1em;
   }
-  main section form .btn {
+  section form .btn {
     padding: 1em;
   }
-  main section iframe {
+  section iframe {
     margin: 0 7.5em 1em 7.5em;
   }
-  main section table {
+  section table {
     margin: 2em auto 1em auto;
     font-size: 1em;
   }
-  main section table td {
+  section table td {
     padding: 0 2em 0 2em;
   }
-  main section p {
+  section p {
     padding: 1em 2em 1em 2em;
   }
-  main section button {
+  section button {
     margin: 2em 10% 2em 10%;
   }
-  main section .accordion {
+  section .accordion {
     padding: 2em;
   }
-  main .col3 {
+  .col3 {
     width: 33.3%;
     float: left;
     display: block;
   }
-  main .padding {
+  .padding {
     padding-bottom: 500px;
   }
-  main .padding2 {
+  .padding2 {
     padding-bottom: 200px;
   }
-  main .padding3 {
+  .padding3 {
     padding: 0 0 1.5em 0;
   }
   header {
